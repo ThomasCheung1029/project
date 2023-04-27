@@ -45,9 +45,7 @@ const ItemScreen = ({route}) => {
             <Text className="text-[12px] font-bold text-gray-100">
                     {data?.price_level}
             </Text>
-            <Text className="text-[24px] font-bold bg-black text-gray-100">
-                    {data?.price}
-            </Text>
+
             </View>
         </View>
     </View>
@@ -67,8 +65,8 @@ const ItemScreen = ({route}) => {
   {data?.rating && (
     <View className="flex-row items-center space-x-2">
         <View className = "w-24 h-24  bg-red-100 items-center justify-center shadow-md">
-      <Text className="text-[24px] font-bold text-[#617143]">Rating</Text>
-      <Text className="text-[20px] text-[#617143]">{data?.rating}</Text>
+      <Text className="text-[20px] font-bold text-[#617143]">Rating</Text>
+      <Text className="text-[18px] text-[#617143]">{data?.rating}</Text>
       </View>
     </View>
   )}
@@ -76,8 +74,8 @@ const ItemScreen = ({route}) => {
 {data?.price_level && (
     <View className="flex-row items-center space-x-2">
         <View className = "w-24 h-24  bg-red-100 items-center justify-center shadow-md">
-      <Text className="text-[24px] font-bold text-[#617143]">Price level</Text>
-      <Text className="text-[20px] text-[#617143]">{data?.price_level}</Text>
+      <Text className="text-[20px] font-bold text-[#617143]">Price level</Text>
+      <Text className="text-[18px] text-[#617143]">{data?.price_level}</Text>
       </View>
     </View>
   )}
@@ -85,51 +83,51 @@ const ItemScreen = ({route}) => {
 {data?.open_now_text && (
     <View className="flex-row items-center space-x-2">
         <View className = "w-24 h-24  bg-red-100 items-center justify-center shadow-md">
-      <Text className="text-[24px] font-bold text-[#617143]">Open?</Text>
-      <Text className="text-[20px] text-[#617143]">{data?.open_now_text}</Text>
+      <Text className="text-[20px] font-bold text-[#617143]">Opened?</Text>
+      <Text className="text-[18px] text-[#617143]">{data?.open_now_text}</Text>
       </View>
     </View>
   )}
 
-{data?.description && (
 
-      <Text className="text-[#617143]">{data?.price_level}</Text>
+</View>
+
+{data?.description && (
+  <Text className="mt-4 tracking-wide text-[14px] text-[#617143]">
+      {data?.description}
+      </Text>
 
   )} 
-</View>
 
-<View className="space-y-2 mt-4 bg-gray-100 rounded-2xl px-4 py-2">
-
-
-</View>
 
 {data?.phone && (
-    <View className="flex-row items-center space-x-2">
+    <View className="flex-row items-center space-x-2 mt-6">
         <View className = "items-center flex-row space-x-6">
         <AntDesign name="phone" size={24} color="black" />
-      <Text className="text-[20px] text-[#617143]">{data?.phone}</Text>
+      <Text className="text-[18px] text-[#617143]">{data?.phone}</Text>
       </View>
     </View>
   )}
 
 
 {data?.address && (
-    <View className="flex-row items-center space-x-2">
+    <View className="flex-row items-center space-x-2 mt-4">
         <View className = "items-center flex-row space-x-6">
         <Entypo name="address" size={24} color="black" />
-      <Text className="text-[20px] text-[#617143]">{data?.address}</Text>
+      <Text className="text-[18px] text-[#617143]">{data?.address}</Text>
       </View>
     </View>
   )}
 
 {data?.email && (
-    <View className="flex-row items-center space-x-2">
+    <View className="flex-row items-center space-x-2 mt-4">
         <View className = "items-center flex-row space-x-6">
         <MaterialIcons name="email" size={24} color="black" />
-      <Text className="text-[20px] text-[#617143]">{data?.email}</Text>
+      <Text className="text-[18px] text-[#617143]">{data?.email}</Text>
       </View>
     </View>
   )}
+
 
 
 
