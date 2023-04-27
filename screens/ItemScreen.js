@@ -71,11 +71,11 @@ const ItemScreen = ({route}) => {
     </View>
   )}
 
-{data?.price_level && (
+{data?.price && (
     <View className="flex-row items-center space-x-2">
         <View className = "w-24 h-24  bg-red-100 items-center justify-center shadow-md">
-      <Text className="text-[20px] font-bold text-[#617143]">Price level</Text>
-      <Text className="text-[18px] text-[#617143]">{data?.price_level}</Text>
+      <Text className="text-[20px] font-bold text-[#617143]">Price</Text>
+      <Text className="text-[18px] text-[#617143]">{data?.price}</Text>
       </View>
     </View>
   )}
