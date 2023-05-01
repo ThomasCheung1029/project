@@ -45,17 +45,18 @@ const Discover = () => {
     <SafeAreaView className = "bg-[#BBD6B8] flex-1 relative">
         <View className="flex-row items-center justify-between ">
             <View className ="px-6 mt-4 space-y-1">
-                <Text className = "text-[#617143] text-[30px] font-semibold">Your next station</Text>
+                <Text className = "text-[#617143] text-[30px] font-semibold">TripSearcher.com</Text>
                 <Text className = "text-[#0B646B] text-[20px]">Discover the world</Text>        
             </View>
             <View className="w-16 h-16 bg-green-400 rounded-md items-center justify-center right-8 top-2">
             <Animatable.Image 
                 animation="fadeIn"
                 easing="ease-in-out"
-                source={require('../assets/avatar.png')} className = "w-full h-full object-cover rounded-md"/>
+                source={require('../assets/cover.png')} className = "w-full h-full object-cover rounded-md"/>
             </View>
         </View>
-        <View className = "flex-row item-center  mx-4 rounded-xl py-1 px-4 mt-4">
+        <View className = "flex-row item-center  mx-4 rounded-xl py-1 px-4 mt-6">
+        <Text className = "text-[#0B646B] text-[20px] py-2 ">Keyword: </Text>
         <GooglePlacesAutocomplete
             GooglePlacesSearchQuery={{fields: "geometry"}}
       placeholder='Search'
@@ -82,32 +83,29 @@ const Discover = () => {
 
                 <MenuContainer
                         key={"restaurants"}
-                        title = "restaurants"
+                        title = "Restaurants"
                         type={type}
                         setType = {setType}
                     />
                 <MenuContainer
                         key={"attractions"}
-                        title = "attractions"
+                        title = "Attractions"
                         type={type}
                         setType = {setType}
                     />   
 
                 <MenuContainer
                         key={"hotels"}
-                        title = "hotels"
+                        title = "Hotels"
                         type={type}
                         setType = {setType}
                     />                                                 
                 </View>
 
                 <View>
-                    <View className="flex-row items-center justify-between py-2 px-2 mt-2">
+                    <View className="flex-row items-center py-2 px-2 mt-2">
                         <Text className='text-2xl text-[#617143]'>Suggestion</Text>
-                        <TouchableOpacity className = "flex-row items-center justify-between space-x-2">
-                        <Text className='text-2xl text-[#617143]'>Explore</Text>
-                        <AntDesign name="arrowright" size={24} color="black" />
-                        </TouchableOpacity>
+
                     </View>
                 </View>
 

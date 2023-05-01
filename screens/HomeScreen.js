@@ -51,7 +51,7 @@ const HomeScreen = () => {
         <Animatable.Image 
         animation="fadeIn"
         easing="ease-in-out"
-        source={require('../assets/hero.png')} className = "w-full h-full object-cover mt-24"/>
+        source={require('../assets/cover.png')} className = "w-full h-full object-cover mt-24"/>
         
         
         <View className = "w-36 h-[72px] right-2 top-10 border-[#94AF9F] border-l-2 border-r-2 border-t-4 rounded-full absolute items-center justify-center"> 
